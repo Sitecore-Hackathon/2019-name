@@ -83,6 +83,10 @@
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Commands\DropLinkCommand.cs" />
+    <Compile Include="Commands\GroupedDropListCommand.cs" />
+    <Compile Include="Commands\DropListCommand.cs" />
+    <Compile Include="Commands\TreeListCommand.cs" />
     <Compile Include="Fields\GoToItemCommand.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
