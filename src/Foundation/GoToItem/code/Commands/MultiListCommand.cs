@@ -6,9 +6,9 @@ using Sitecore.Diagnostics;
 
 namespace DollarName.Foundation.GoToItem.Commands
 {
-    //this command supports Droplink, Droptree, Grouped Droplink
+    //Supports both Multilist and Multilist with Search
     [Serializable]
-    public class DropLinkCommand : Command
+    public class MultiListCommand : Command
     {
         public override void Execute(CommandContext context)
         {
@@ -17,7 +17,7 @@ namespace DollarName.Foundation.GoToItem.Commands
             string fieldId = context.Parameters["id"] ?? "";
 
             //get the ID of the selected item in the link type field
-            var id = Sitecore.Context.ClientPage.ClientRequest.Form[fieldId];
+            var id = Sitecore.Context.ClientPage.ClientRequest.Form[fieldId + "_Selected"];
 
             ClientPipelineArgs args = new ClientPipelineArgs();
             args.Parameters["id"] = id;
