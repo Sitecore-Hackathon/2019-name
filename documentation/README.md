@@ -23,13 +23,13 @@ We provided a sample item located here: /sitecore/content/Home/GoToItem Demo
 This item can shows you the basic functionality for each type of field.
 
 1. Reference and Multilist Fields have a new link above the field input box.
-![1.png] (images/item@.png?raw=true "1.png")
+![1.png] (images/1.png?raw=true "1.png")
 
 2. Clicking on this link now takes you to the selected item.
-![2.png] (images/item@.png?raw=true "2.png")
+![2.png] (images/2.png?raw=true "2.png")
 
 3. For fields with multiple selected values, first select a value and then click on the "Go to Item" link.
-![3.png] (images/item@.png?raw=true "3.png")
+![3.png] (images/3.png?raw=true "3.png")
 
 ## Video
 Here is a link demoing our module:
