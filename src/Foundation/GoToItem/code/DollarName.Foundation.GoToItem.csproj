@@ -76,12 +76,14 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App_Config\Include\Foundation\Foundation.GoToItem.config.disabled" />
+    <None Include="App_Config\Include\Foundation\Foundation.GoToItem.config" />
+    <None Include="App_Config\Include\Foundation\Foundation.GoToItem.Serialization.config.disabled" />
     <None Include="packages.config" />
     <None Include="Properties\PublishProfiles\Local.pubxml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Fields\GoToItemCommand.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
