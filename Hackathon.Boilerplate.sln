@@ -1,9 +1,12 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26730.12
+VisualStudioVersion = 15.0.26403.7
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Feature", "Feature", "{17DD5718-6E13-4F2C-9738-B410396D4552}"
+	ProjectSection(SolutionItems) = preProject
+		test file.txt = test file.txt
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Foundation", "Foundation", "{4FDA1DCD-D33E-447E-91C1-F4AE818E2CF0}"
 EndProject
@@ -15,6 +18,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configuration", "Configurat
 		.gitattributes = .gitattributes
 		.gitignore = .gitignore
 		nuget.config = nuget.config
+		publishsettings.targets = publishsettings.targets
 		README.md = README.md
 	EndProjectSection
 EndProject
@@ -29,12 +33,38 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "images", "images", "{D27C83
 		documentation\images\hackathon.png = documentation\images\hackathon.png
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Serialization", "Serialization", "{3F774A38-96D6-45E5-BF77-178D60230478}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Foundation.Serialization", "src\Foundation\Serialization\code\Sitecore.Foundation.Serialization.csproj", "{007CD5DC-0030-460D-91A3-3DDEA9AB472F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GoToItem", "GoToItem", "{3F2DB147-4C39-44E5-939F-EA2A37AB8B9C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DollarName.Foundation.GoToItem", "src\Foundation\GoToItem\code\DollarName.Foundation.GoToItem.csproj", "{DC6E8B88-9FCB-423C-B4D4-2CBEC6A95AAB}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{007CD5DC-0030-460D-91A3-3DDEA9AB472F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{007CD5DC-0030-460D-91A3-3DDEA9AB472F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{007CD5DC-0030-460D-91A3-3DDEA9AB472F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{007CD5DC-0030-460D-91A3-3DDEA9AB472F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC6E8B88-9FCB-423C-B4D4-2CBEC6A95AAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC6E8B88-9FCB-423C-B4D4-2CBEC6A95AAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC6E8B88-9FCB-423C-B4D4-2CBEC6A95AAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC6E8B88-9FCB-423C-B4D4-2CBEC6A95AAB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{D27C83D2-2EAF-4E44-A1ED-2B3C2EBB5854} = {DAFED8F5-6CBD-4384-AAD6-DC3BCCF24911}
+		{3F774A38-96D6-45E5-BF77-178D60230478} = {4FDA1DCD-D33E-447E-91C1-F4AE818E2CF0}
+		{007CD5DC-0030-460D-91A3-3DDEA9AB472F} = {3F774A38-96D6-45E5-BF77-178D60230478}
+		{3F2DB147-4C39-44E5-939F-EA2A37AB8B9C} = {4FDA1DCD-D33E-447E-91C1-F4AE818E2CF0}
+		{DC6E8B88-9FCB-423C-B4D4-2CBEC6A95AAB} = {3F2DB147-4C39-44E5-939F-EA2A37AB8B9C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {311DA37D-528B-43B2-A99B-E7253F841D46}
